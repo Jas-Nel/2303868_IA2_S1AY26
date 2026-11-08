@@ -1,0 +1,219 @@
+/* Jasmin Nelson */
+/* Student ID: 2303868 */
+/* Web Programming Individual Assignment 2 */
+/* CSS for the Registration Website */
+
+
+/* The colours and font used throughout the website */
+:root {--white: #ffffff; --light-grey: #d6d5d8; --dark-bg: hsl(248, 70%, 10%); --orange: hsl(7, 88%, 67%); --pink: #E9A3C2; --purple: hsl(245, 19%, 35%); --font: Arial, sans-serif;}
+
+
+/* This makes the element sizes easier to control */
+* {box-sizing: border-box;}
+
+
+/* This styles the whole webpage */
+body {margin: 0; min-height: 100vh; font-family: var(--font); color: var(--white); background-color: var(--dark-bg); background-image: url("../assets/background-desktop.png"); background-position: center; background-size: cover; background-repeat: no-repeat;}
+
+
+/* This edits the top of the page */
+header {text-align: center; padding: 30px 15px;}
+
+header img {width: 300px; max-width: 100%;}
+
+
+/* This styles the main content area on the page */
+main {max-width: 750px; margin: 20px auto; padding: 30px;}
+
+
+/* To select multiple heading elements */
+:is(h1, h2) {font-weight: 800;}
+
+
+/* This styles the small introduction line */
+.eyebrow {color: var(--pink); font-size: 20px; font-weight: 700; letter-spacing: 2px; text-align: center;}
+
+
+
+/* This edits the homepage welcome section */
+.welcome {text-align: center; padding: 30px 0;}
+
+.welcome h1 {font-size: clamp(32px, 5vw, 50px); line-height: 1.15; margin-bottom: 20px;}
+
+.welcome h1 span {color: var(--orange);}
+
+.welcome > p:not(.eyebrow) {color: var(--light-grey); font-size: 20px; line-height: 1.5;}
+
+
+
+/* This edits the event information */
+.event-info {display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 30px; margin: 30px 0;}
+
+.event-info p {color: var(--light-grey); font-size: 18px;}
+
+.event-info strong {color: var(--pink);}
+
+
+
+/* This styles the main buttons */
+.register-button {display: inline-block; background-color: var(--orange); color: var(--dark-bg);
+padding: 15px 30px; border: 2px solid var(--orange); border-radius: 9px; text-decoration: none; text-align: center; font-family: inherit; font-size: 18px; font-weight: 800; transition: 0.3s;}
+
+.register-button:hover {background-color: var(--pink); border-color: var(--pink); color: var(--dark-bg); transform: translateY(-3px);}
+
+
+
+/* This styles the about section */
+.about {text-align: center; padding: 30px 0; border-top: 1px solid rgba(233, 163, 194, 0.35);}
+
+.about h2 {font-size: 28px; color: var(--pink);}
+
+.about p {color: var(--light-grey); font-size: 18px; line-height: 1.6;}
+
+
+
+/* This styles the registration page */
+.registration {max-width: 550px; margin: 0 auto; padding: 25px;}
+
+.registration h1 {text-align: center; font-size: clamp(30px, 5vw, 42px); margin: 10px 0 12px;}
+
+.registration-intro {text-align: center; color: var(--light-grey); font-size: 18px; line-height: 1.5; margin-bottom: 30px;}
+
+
+
+/* The layout of the registration form */
+.form-group {display: flex; flex-direction: column; margin-bottom: 22px;}
+
+.form-group label {font-size: 18px; margin-bottom: 9px; font-weight: 700;}
+
+.form-group input {width: 100%; padding: 14px; border: 1px solid var(--purple); border-radius: 8px; background-color: rgba(255, 255, 255, 0.08); color: var(--white); font-family: inherit;
+font-size: 16px;}
+
+.form-group input::placeholder {color: var(--light-grey);}
+
+.form-group input:focus {outline: 2px solid var(--pink); border-color: var(--pink);}
+
+.form-group input[type="file"] {cursor: pointer;}
+
+.input-hint {color: var(--light-grey); font-size: 14px; margin-top: 8px;}
+
+.error-message {color: #ff9b9b; font-size: 14px; margin-top: 7px;}
+
+
+
+/* This styles the form submit button */
+.registration .register-button {width: 100%; cursor: pointer;}
+
+.registration .register-button:focus-visible, a:focus-visible {outline: 3px solid var(--pink); outline-offset: 5px;}
+
+
+
+/* This link takes the user back to homepage */
+.back-link {text-align: center; margin-top: 25px;}
+
+.back-link a {color: var(--pink); text-decoration: none;}
+
+.back-link a:hover {color: var(--orange); text-decoration: underline;}
+
+
+
+/* The style for the ticket confirmation page */
+.ticket-section {text-align: center; max-width: 750px; margin: 0 auto; padding: 20px 0 40px;}
+
+.ticket-section h1 {font-size: clamp(30px, 5vw, 44px); margin-bottom: 15px;}
+
+.ticket-intro {color: var(--light-grey); font-size: 18px; margin-bottom: 35px;}
+
+
+
+/* The ticket card layout */
+.ticket-card {width: 100%; max-width: 620px; margin: 0 auto 35px; padding: 25px; border: 1px solid rgba(233, 163, 194, 0.65); border-radius: 16px; background: rgba(255, 255, 255, 0.10);
+backdrop-filter: blur(12px); text-align: left; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);}
+
+.ticket-top {padding-bottom: 25px; border-bottom: 1px dashed var(--pink);}
+
+.ticket-top img {width: 300px; max-width: 100%; margin-bottom: 15px;}
+
+.ticket-event-details p {color: var(--light-grey); margin: 7px 0;}
+
+.ticket-label {display: inline-block; margin-top: 12px; padding: 5px 10px; border: 1px solid var(--orange); border-radius: 20px; color: var(--orange); font-size: 12px; font-weight: 700;
+letter-spacing: 1px;}
+
+
+
+/* The structure for the ticket card information */
+.ticket-bottom {display: flex; align-items: center; gap: 15px; padding-top: 25px;}
+
+.ticket-avatar {width: 75px; height: 75px; border-radius: 12px; object-fit: cover; border: 2px solid var(--pink); }
+
+.ticket-person {flex: 1; min-width: 0;}
+
+.ticket-person h2 {font-size: 22px; margin: 0 0 8px; overflow-wrap: anywhere;}
+
+.ticket-person a {color: var(--pink); text-decoration: none; overflow-wrap: anywhere;}
+
+.ticket-person a:hover {color: var(--orange); text-decoration: underline;}
+
+.ticket-number {color: var(--light-grey); font-size: 16px; writing-mode: vertical-rl; letter-spacing: 2px;}
+
+.home-button {margin-top: 10px;}
+
+
+
+/* This styles the footer */
+footer {text-align: center; padding: 20px; color: var(--light-grey); font-size: 14px;}
+
+
+/* This makes the layout responsive for tablets */
+@media (max-width: 900px) {body {background-image: url("../assets/background-tablet.png");} }
+
+
+
+/* This makes the layout responsive for phones */
+@media (max-width: 600px) {body {background-image: url("../assets/background-mobile.png"); }
+
+header {padding: 20px 10px;}
+
+main {width: 90%; padding: 15px 0;}
+
+.welcome h1 {font-size: 34px;}
+
+.welcome > p:not(.eyebrow) {font-size: 17px;}
+
+.event-info {flex-direction: column; gap: 5px;}
+
+.event-info p {margin: 5px;}
+
+.about p {font-size: 16px;}
+
+.register-button {width: 100%;max-width: 300px;}
+
+.registration {width: 100%; padding: 15px 5px;}
+
+.registration-intro {font-size: 16px;}
+
+.form-group label {font-size: 16px;}
+
+.ticket-section {padding: 15px 5px 30px;}
+
+.ticket-card {padding: 18px;}
+
+.ticket-bottom {flex-wrap: wrap;}
+
+.ticket-avatar {width: 60px; height: 60px;}
+
+.ticket-person h2 {font-size: 18px;}
+
+.ticket-number {margin-left: auto;}}
+
+
+/* This is for very small phone screens */
+@media (max-width: 360px) {.ticket-bottom {gap: 10px;} .ticket-avatar {width: 52px; height: 52px;} .ticket-person h2 {font-size: 16px;}}
+
+
+/* This controls the spacing when moving to different sections */
+:where(.about, .registration, .ticket-section) {scroll-margin-top: 20px;}
+
+
+/* This highlights a form label when its input is selected */
+.form-group:has(input:focus) label {color: var(--pink);}

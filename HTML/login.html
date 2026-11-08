@@ -1,0 +1,82 @@
+<!-- Jasmin Nelson -->
+<!-- Student ID: 2303868 -->
+<!-- Web Programming Individual Assignment 2 -->
+<!-- HTML for the login page of Registration Website -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Register | Coding Conf 2026</title>
+
+<link rel="icon" href="../assets/favicon-32x32.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+<a href="index.html" aria-label="Coding Conf home">
+<img src="../assets/logo-full.svg" alt="Coding Conf logo">
+</a>
+</header>
+
+<main>
+
+<section class="registration"> <!-- The registration form section -->
+<p class="eyebrow">CODING CONF 2026</p>
+<h1>Secure Your Spot.</h1>
+<p class="registration-intro">Enter your details below to sign up for the 2026 Coding Conference. We look forward to having you join us!</p>
+
+<form id="registrationForm" novalidate> <!-- JavaScript checks the form and displays errors -->
+
+<div class="form-group"> <!-- Name field -->
+<label for="fullName">Full Name</label>
+<input type="text" id="fullName" name="fullName" placeholder="e.g. Jasmin Nelson" 
+autocomplete="name" required aria-describedby="nameError">
+<small class="error-message" id="nameError" aria-live="polite"></small>
+</div>
+
+<div class="form-group"> <!-- Email field -->
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="e.g. jasminnelson123@email.com" 
+autocomplete="email" required aria-describedby="emailError">
+<small class="error-message" id="emailError" aria-live="polite"></small>
+</div>
+
+<div class="form-group"> <!-- GitHub username field -->
+<label for="github">GitHub Username</label>
+<input type="text" id="github" name="github" placeholder="e.g. @yourusername" required aria-describedby="githubHint githubError">
+<small class="input-hint" id="githubHint">Include the @ symbol before your username.</small>
+<small class="error-message" id="githubError" aria-live="polite"></small>
+</div>
+
+<div class="form-group"> <!-- Profile picture field -->
+<label for="avatar">Profile Picture</label>
+<input type="file" id="avatar" name="avatar" accept=".jpg, .jpeg, .png" required aria-describedby="avatarHint avatarError">
+<small class="input-hint" id="avatarHint">Choose a JPG or PNG image smaller than 500KB.</small>
+<small class="error-message" id="avatarError" aria-live="polite"></small>
+</div>
+
+<button type="submit" class="register-button">Generate My Conference Pass</button>
+
+</form>
+
+<p class="back-link">
+<a href="index.html">RETURN TO THE HOMEPAGE</a>
+</p>
+
+</section>
+</main>
+
+<footer>
+<p>&copy; Coding Conf, 2026.</p>
+</footer>
+
+<script src="../js/validation.js"></script> <!-- Connects JavaScript to the registration form -->
+
+</body>
+</html>

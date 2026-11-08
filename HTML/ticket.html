@@ -1,0 +1,77 @@
+<!-- Jasmin Nelson -->
+<!-- Student ID: 2303868 -->
+<!-- Web Programming Individual Assignment 2 -->
+<!-- HTML for the ticket page of Registration Website -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Pass | Coding Conf, 2026</title>
+
+<link rel="icon" href="../assets/favicon-32x32.png">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<header>
+<a href="index.html" aria-label="Coding Conf home">
+<img src="../assets/logo-full.svg" alt="Coding Conf logo">
+</a>
+</header>
+
+<main>
+
+<section class="ticket-section"> <!-- Creates the ticket section -->
+
+<p class="eyebrow">REGISTRATION CONFIRMED</p>
+<h1 id="congratsMessage">Your conference pass is ready!</h1> <!-- Personalised confirmation heading -->
+<p class="ticket-intro">You're all set. Please note, this pass is required for entry.</p>
+
+<article class="ticket-card"> <!-- Creates the ticket card -->
+
+
+<div class="ticket-top">
+<img src="../assets/logo-full.svg" alt="Coding Conf logo">
+
+<div class="ticket-event-details">
+<p>October 26, 2026</p>
+<p>Papine, Kingston</p>
+</div>
+
+<span class="ticket-label">ADMIT ONE</span>
+</div>
+
+
+<div class="ticket-bottom">
+<img src="" alt="Attendee profile picture" id="ticketAvatar" class="ticket-avatar">
+
+<div class="ticket-person">
+<h2 id="ticketName">Attendee Name</h2>
+<a href="#" id="ticketGithub" target="_blank" rel="noopener noreferrer">@username</a> <!-- Links to the user's GitHub profile -->
+</div>
+
+<p id="ticketNumber" class="ticket-number">#00000</p>
+</div>
+
+
+</article>
+
+<a href="index.html" class="register-button home-button">Back to Homepage</a>
+
+</section>
+</main>
+
+
+<footer>
+<p>&copy; Coding Conf, 2026.</p>
+</footer>
+
+<script src="../js/ticket.js"></script> <!-- Connects JavaScript to display the saved registration details -->
+
+</body>
+</html>
